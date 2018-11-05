@@ -65,7 +65,7 @@ rvVertical.initData(listContent, OrientationShowType.CENTER_VERTICAL,
 
 ```
    <com.joketng.timelinestepview.view.TimeLineStepView
-          android:id="@+id/rvVerticalCustom"
+          android:id="@+id/rvVertical"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:paddingStart="20dp"
@@ -104,24 +104,25 @@ rvVertical.initData(listContent, OrientationShowType.CENTER_VERTICAL,
 ```
 
 ## 截图
+-timeLine样式加自定义布局
+<div>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_left.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_right.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_all.png" width=30% height=30%/>
+</div>
 -水平样式
 <div>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_top.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_bottom.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_all.png" width=33% height=33%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_top.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_bottom.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal_all.png" width=30% height=30%/>
 </div>
 -垂直样式
 <div>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_left.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_right.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_all.png" width=33% height=33%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_left.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_right.png" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_all.png" width=30% height=30%/>
 </div>
--timeLine样式加自定义布局
-<div>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_left.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_right.png" width=33% height=33%/>
-<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom_all.png" width=33% height=33%/>
-</div>
+
 
 # 联系方式
 如果有什么问题，我没有及时回复的话，可以加我qq542490039，或者发邮件到joketng@163.com，我看到之后会回复的。
