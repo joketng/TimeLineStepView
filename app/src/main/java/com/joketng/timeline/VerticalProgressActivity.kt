@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.ViewGroup
-import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
-import com.joketng.timelinestepview.bean.BaseBean
-import com.joketng.timelinestepview.view.TimeLineStepView
 import com.joketng.timelinestepview.LayoutType
 import com.joketng.timelinestepview.OrientationShowType
 import com.joketng.timelinestepview.TimeLineState
+import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
+import com.joketng.timelinestepview.bean.BaseBean
+import com.joketng.timelinestepview.view.TimeLineStepView
 import kotlinx.android.synthetic.main.activity_vertical_progress.*
 
 
@@ -70,5 +70,7 @@ class VerticalProgressActivity : AppCompatActivity() {
                     }
 
                 }).setLayoutType(type)
+
+
     }
 }

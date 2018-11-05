@@ -35,7 +35,7 @@
     </RadioGroup>
     <com.joketng.timelinestepview.view.TimeLineStepView
         android:id="@+id/rvVertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:lineWidth="3dp"
         app:markSize="10dp"
