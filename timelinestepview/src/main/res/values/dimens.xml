@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_line_top_margin">5dp</dimen>
+    <dimen name="time_line_bottom_margin">10dp</dimen>
+    <dimen name="vertical_top_margin">5dp</dimen>
+    <dimen name="vertical_bottom_margin">5dp</dimen>
+    <dimen name="horizontal_left_margin">5dp</dimen>
+    <dimen name="horizontal_right_margin">5dp</dimen>
+
+</resources>

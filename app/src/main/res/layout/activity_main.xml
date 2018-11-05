@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btn_time_line"
+        android:layout_width="match_parent"
+        android:text="时间轴样式"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_vertical_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="垂直样式"
+        />
+
+    <Button
+        android:id="@+id/btn_horizontal_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水平样式"
+        />
+    <Button
+        android:id="@+id/btn_all_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义样式"
+        />
+
+
+
+</LinearLayout>

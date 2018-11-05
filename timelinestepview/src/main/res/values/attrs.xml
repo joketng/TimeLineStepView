@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimeLineStepView">
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="isCustom" format="boolean"/>
+        <attr name="lineInActiveColor" format="reference|color"/>
+        <attr name="lineActiveColor" format="reference|color"/>
+        <attr name="markInActive" format="reference"/>
+        <attr name="markActive" format="reference"/>
+        <attr name="markStart" format="reference"/>
+        <attr name="markEnd" format="reference"/>
+        <attr name="markCurrent" format="reference"/>
+        <attr name="markSize" format="dimension"/>
+        <attr name="leftLayoutBackground" format="reference"/>
+        <attr name="rightLayoutBackground" format="reference"/>
+        <attr name="layoutType">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="all" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c_main_orange">#f29a29</color>
+    <color name="c_main_text">#666666</color>
+    <color name="c_main_black">#333333</color>
+    <color name="c_main_gray">#999999</color>
+
+
+</resources>

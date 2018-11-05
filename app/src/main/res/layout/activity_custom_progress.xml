@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CustomProgressActivity">
+
+    <RadioGroup
+        android:id="@+id/rgGroup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左右都显示"
+            />
+
+        <RadioButton
+            android:id="@+id/rbLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左边显示"
+            />
+        <RadioButton
+            android:id="@+id/rbRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右边显示"
+            />
+
+    </RadioGroup>
+    <com.joketng.timelinestepview.view.TimeLineStepView
+        android:id="@+id/rvVerticalCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lineWidth="3dp"
+        app:markSize="10dp"
+        android:paddingStart="20dp"
+        app:markStart="@drawable/shape_circle_orange"
+        />
+
+</LinearLayout>
