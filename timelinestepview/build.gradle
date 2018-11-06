@@ -43,8 +43,8 @@ publish {
     groupId = 'com.joketng'         //compile引用时的第1部分groupId
     artifactId = 'TimeLineStepView'     //compile引用时的第2部分项目名
     publishVersion = '1.0.0'    //compile引用时的第3部分版本号
-    desc = 'This is a timeline stepView library'
-    website = 'https://github.com/joketng'
+    desc = 'This is a timeline stepView library for Android'
+    website = 'https://github.com/joketng/TimeLineStepView'
 }
 
 allprojects {

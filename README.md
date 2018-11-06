@@ -3,9 +3,8 @@
 
 ## 添加依赖
 ```
-正在更新
+implementation 'com.joketng:TimeLineStepView:1.0.0'
 ```
-
 ## 使用方法
 - 在布局文件中添加TimeLineStepView
 ```
@@ -123,7 +122,15 @@ rvVertical.initData(listContent, OrientationShowType.CENTER_VERTICAL,
 <image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical_all.png" width=30% height=30%/>
 </div>
 
-
+-使用Maven
+```
+<dependency>
+  <groupId>com.joketng</groupId>
+  <artifactId>TimeLineStepView</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
 # 联系方式
 如果有什么问题，我没有及时回复的话，可以加我qq542490039，或者发邮件到joketng@163.com，我看到之后会回复的。
 
