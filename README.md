@@ -3,7 +3,7 @@
 
 ## 添加依赖
 ```
-implementation 'com.joketng:TimeLineStepView:1.0.0'
+implementation 'com.joketng:TimeLineStepView:1.0.1'
 ```
 ## 使用方法
 - 在布局文件中添加TimeLineStepView

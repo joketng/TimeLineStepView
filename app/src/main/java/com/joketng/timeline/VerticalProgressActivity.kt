@@ -12,6 +12,7 @@ import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
 import com.joketng.timelinestepview.bean.BaseBean
 import com.joketng.timelinestepview.view.TimeLineStepView
 import kotlinx.android.synthetic.main.activity_vertical_progress.*
+import kotlinx.android.synthetic.main.item_header.*
 
 
 class VerticalProgressActivity : AppCompatActivity() {
@@ -22,6 +23,7 @@ class VerticalProgressActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vertical_progress)
         context = this
+        tv_page_title.text = "垂直布局居中对齐"
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:30", rightTitle = "订单提交成功", rightTime = "订单提交成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:31", rightTitle = "订单付款成功", rightTime = "订单付款成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "10:00", rightTitle = "仓库已经接单", rightTime = "仓库已经接单描述", timeLineState = TimeLineState.ACTIVE))

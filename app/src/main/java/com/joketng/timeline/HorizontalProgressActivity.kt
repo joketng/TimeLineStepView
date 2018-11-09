@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.ViewGroup
-import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
-import com.joketng.timelinestepview.bean.BaseBean
-import com.joketng.timelinestepview.view.TimeLineStepView
 import com.joketng.timelinestepview.LayoutType
 import com.joketng.timelinestepview.OrientationShowType
 import com.joketng.timelinestepview.TimeLineState
+import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
+import com.joketng.timelinestepview.bean.BaseBean
+import com.joketng.timelinestepview.view.TimeLineStepView
 import kotlinx.android.synthetic.main.activity_horizontal_progress.*
+import kotlinx.android.synthetic.main.item_header.*
 
 class HorizontalProgressActivity : AppCompatActivity() {
     lateinit var context : Context
@@ -20,7 +21,7 @@ class HorizontalProgressActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_horizontal_progress)
-
+        tv_page_title.text = "水平布局"
         context = this
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:30", rightTitle = "订单提交成功", rightTime = "订单提交成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:31", rightTitle = "订单付款成功", rightTime = "订单付款成功描述", timeLineState = TimeLineState.ACTIVE))

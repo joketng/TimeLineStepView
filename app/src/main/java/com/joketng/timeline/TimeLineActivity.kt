@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.ViewGroup
-import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
-import com.joketng.timelinestepview.bean.BaseBean
-import com.joketng.timelinestepview.view.TimeLineStepView
 import com.joketng.timelinestepview.LayoutType
 import com.joketng.timelinestepview.OrientationShowType
 import com.joketng.timelinestepview.TimeLineState
+import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
+import com.joketng.timelinestepview.bean.BaseBean
+import com.joketng.timelinestepview.view.TimeLineStepView
 import kotlinx.android.synthetic.main.activity_time_line.*
+import kotlinx.android.synthetic.main.item_header.*
 
 
 class TimeLineActivity : AppCompatActivity() {
@@ -22,6 +23,7 @@ class TimeLineActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_time_line)
         context = this
+        tv_page_title.text = "垂直布局顶部对齐"
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:30", rightTitle = "订单提交成功", rightTime = "订单提交成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:31", rightTitle = "订单付款成功", rightTime = "订单付款成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "10:00", rightTitle = "仓库已经接单", rightTime = "仓库已经接单描述", timeLineState = TimeLineState.ACTIVE))
@@ -67,6 +69,7 @@ class TimeLineActivity : AppCompatActivity() {
                     }
 
                     override fun createCustomView(leftLayout: ViewGroup, rightLayout: ViewGroup, holder: TimeLineStepAdapter.CustomViewHolder) {
+
                     }
 
                 }).setLayoutType(type)

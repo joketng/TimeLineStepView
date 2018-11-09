@@ -6,14 +6,15 @@ import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
 import com.joketng.timeline.bean.CustomBean
-import com.joketng.timelinestepview.view.TimeLineStepView
 import com.joketng.timelinestepview.LayoutType
 import com.joketng.timelinestepview.OrientationShowType
+import com.joketng.timelinestepview.adapter.TimeLineStepAdapter
+import com.joketng.timelinestepview.view.TimeLineStepView
 import kotlinx.android.synthetic.main.activity_custom_progress.*
 import kotlinx.android.synthetic.main.item_add_left_view.view.*
 import kotlinx.android.synthetic.main.item_add_right_view.view.*
+import kotlinx.android.synthetic.main.item_header.*
 
 class CustomProgressActivity : AppCompatActivity() {
     lateinit var context : Context
@@ -23,6 +24,7 @@ class CustomProgressActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_progress)
         context = this
+        tv_page_title.text = "自定义布局"
         listContent.add(CustomBean())
         listContent.add(CustomBean())
         listContent.add(CustomBean())
