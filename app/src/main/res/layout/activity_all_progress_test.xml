@@ -7,14 +7,17 @@
     android:id="@+id/root_view"
     android:layout_height="match_parent"
     tools:context=".AllProgressTestActivity">
+    <include layout="@layout/item_header"/>
 
     <com.joketng.timelinestepview.view.TimeLineStepView
         android:id="@+id/time_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:isCustom="true"
-        app:layoutType="left"
-        app:lineWidth="4dp"
+        app:layoutType="right"
+        app:lineWidth="2dp"
+        app:lineActiveColor="@color/colorAccent"
+        app:lineInActiveColor="@color/colorAccent"
         />
 
 </LinearLayout>

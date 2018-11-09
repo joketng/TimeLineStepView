@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一个标题"
+        android:textColor="@color/c_main_black"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_one"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/x2"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_two"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/x2"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_three"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/x2"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="写一点描述信息"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/c_main_black"
+        />
+
+</LinearLayout>

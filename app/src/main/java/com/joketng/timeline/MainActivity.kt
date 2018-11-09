@@ -32,5 +32,8 @@ class MainActivity : Activity() {
         btn_all_progress.setOnClickListener {
             startActivity(Intent(context, CustomProgressActivity::class.java))
         }
+        btn_custom_progress.setOnClickListener {
+            startActivity(Intent(context, AllProgressTestActivity::class.java))
+        }
     }
 }
