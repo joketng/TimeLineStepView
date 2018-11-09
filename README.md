@@ -1,9 +1,9 @@
 # TimeLineStepView
 支持时间轴和StepView，三种布局，支持水平布局，垂直布局和自定义布局，截图如下
 <div>
-<image src="https://user-gold-cdn.xitu.io/2018/11/9/166f6f7811848166?w=1080&h=1920&f=gif&s=262954" width=30% height=30%/>
-<image src="https://user-gold-cdn.xitu.io/2018/11/9/166f6f86583d0a83?w=1080&h=1920&f=gif&s=713868" width=30% height=30%/>
-<image src="https://user-gold-cdn.xitu.io/2018/11/9/166f6f8ada8291bd?w=1080&h=1920&f=gif&s=140252" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical.gif" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom.gif" width=30% height=30%/>
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/horizontal.gif" width=30% height=30%/>
 </div>
 
 ## 添加依赖
@@ -130,8 +130,7 @@ rightLayoutParams.rightMargin = context.dip(30)
 ```
 自定义布局的一个截图如下
 <div>
-<image src="https://user-gold-cdn.xitu.io/2018/11/9/166f76dd75443759?w=10
-80&h=1920&f=png&s=628706" width=40% height=40% />
+<image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom2.png" width=40% height=40% />
 
 **使用Maven**
 ```
