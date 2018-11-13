@@ -12,7 +12,7 @@ implementation 'com.joketng:TimeLineStepView:1.0.1'
 ```
 ## 使用方法
 - 在布局文件中添加TimeLineStepView
-```
+```xml
 <com.joketng.timelinestepview.view.TimeLineStepView
         android:id="@+id/rvVertical"
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@ implementation 'com.joketng:TimeLineStepView:1.0.1'
 ```
 
 - 在代码中调用
-```
+```kotlin
 //OrientationShowType对应三种布局方式
 //OrientationShowType.TIMELINE(时间轴方式)
 //OrientationShowType.CENTER_VERTICAL(垂直方式)
@@ -65,7 +65,7 @@ rvVertical.initData(listContent, OrientationShowType.CENTER_VERTICAL,
                 
 ```
 listContent的取值为 mutableListOf<BaseBean>()，当存在自定义布局的时候，listContent中添加的实体需要继承BaseBean这个实体，如果不需要自定义布局，可以直接添加实体BaseBean
-```
+```kotlin
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:30", rightTitle = "订单提交成功", rightTime = "订单提交成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "08:31", rightTitle = "订单付款成功", rightTime = "订单付款成功描述", timeLineState = TimeLineState.ACTIVE))
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "10:00", rightTitle = "仓库已经接单", rightTime = "仓库已经接单描述", timeLineState = TimeLineState.ACTIVE))
@@ -76,17 +76,17 @@ listContent的取值为 mutableListOf<BaseBean>()，当存在自定义布局的�
         listContent.add(BaseBean(leftTitle = "11-11", leftTime = "16:30", rightTitle = "运输中", rightTime = "运输中描述", timeLineState = TimeLineState.INACTIVE))
 ```
 BaseBean的五个参数前四个为控件的文本,前四个参数不传的话该控件就不会显示,最后一个TimeLineState对应进度的三种状态TimeLineState.ACTIVE，TimeLineState.INACTIVE，TimeLineState.CURRENT，根据状态在onBindDataViewHolder方法中设置markdrawable，linecolor等,在设置markSize的时候，如果大小超过30dp,需要在createCustomView方法或者onBindDataViewHolder方法中调用holder.llLine.layoutParams.width设置为大于等于markSize的大小或者设置为WrapContent，如下
-```
+```kotlin
 holder.llLine.layoutParams.width = context.dip(35)
 holder.llLine.layoutParams.width = LinearLayout.LayoutParams.WRAP_CONTENT
 ```
 对于布局的显示位置有要求的话可以在createCustomView方法中通过layoutParams来控制
-```
+```kotlin
 val rightLayoutParams = rightLayout.layoutParams as LinearLayout.LayoutParams
 rightLayoutParams.rightMargin = context.dip(30)
 ```
 如果不喜欢在代码中设置控件属性的话可以选择布局文件中增加属性
-```
+```xml
    <com.joketng.timelinestepview.view.TimeLineStepView
           android:id="@+id/rvVertical"
           android:layout_width="match_parent"
@@ -108,7 +108,7 @@ rightLayoutParams.rightMargin = context.dip(30)
 
 如果需要可以在onBindDataViewHolder方法中通过holder获取控件改变控件的样式，如果想要添加自定义的UI，可以在createCustomView方法中添加自己定义的布局文件，此时调用setIsCustom(true)即可
 
-```
+```kotlin
    rvVertical.initData(listContent, OrientationShowType.CENTER_VERTICAL,
                    object : TimeLineStepView.OnInitDataCallBack{
                        override fun onBindDataViewHolder(holder: TimeLineStepAdapter.CustomViewHolder, position: Int) {
