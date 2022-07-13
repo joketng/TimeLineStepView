@@ -142,7 +142,7 @@ rightLayoutParams.rightMargin = context.dip(30)
 </dependency>
 ```
 # 联系方式
-如果有什么问题，我没有及时回复的话，可以加我qq542490039，或者发邮件到joketng@163.com，我看到之后会回复的。
+如果有什么问题，我没有及时回复的话，可以发邮件到joketng@163.com，我看到之后会回复的。
 
 # License
   Copyright 2018 joketng
