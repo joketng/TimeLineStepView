@@ -1,5 +1,5 @@
 # TimeLineStepView
-Android中timeline布局支持时间轴的TimeLineStepView，三种布局，支持水平布局，垂直布局和自定义布局，截图如下
+Android中使用kotlin的timeline布局支持时间轴的TimeLineStepView，三种布局，支持水平布局，垂直布局和自定义布局，截图如下
 <div>
 <image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/vertical.gif" width=30% height=30%/>
 <image src="https://github.com/joketng/TimeLineStepView/blob/master/pic/custom.gif" width=30% height=30%/>
